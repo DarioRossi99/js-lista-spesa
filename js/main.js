@@ -1,12 +1,12 @@
-const spesaLista = ["pane", "pasta", "salumi", "latte", "uova", "formaggi", "pesce", "voglia di vivere", "acqua"]
+const spesaLista = []
 
+let text = (spesaLista);
 
-let i = 0;
-let text = "";
-
-while (spesaLista[i]) {
-  text += spesaLista[i] + "<br>";
-  i++;
+while (spesaLista.length < 6) {
+    const input = prompt("spesa da fare");
+    spesaLista.push ( input );
 }
+
+console.log( spesaLista )
 
 document.getElementById("lista").innerHTML = text;
